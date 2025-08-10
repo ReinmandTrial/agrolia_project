@@ -1,0 +1,92 @@
+/*!
+Theme Name: agrolia
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: agrolia
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+agrolia is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+/* 404 page */
+.page-404 {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+.page-404__inner {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.page-404__code {
+  font-size: clamp(72px, 12vw, 144px);
+  font-weight: 800;
+  line-height: 1;
+  color: #e5e7eb; /* gray-200 */
+  user-select: none;
+}
+.page-404__title {
+  margin-top: 16px;
+}
+.page-404__desc {
+  margin-top: 8px;
+  color: #6b7280; /* gray-500/600 area */
+}
+.page-404__actions {
+  margin-top: 32px;
+  display: inline-flex;
+  gap: 12px;
+}
+.page-404__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+  border: 1px solid transparent;
+}
+.page-404__btn--primary {
+  background-color: #16a34a; /* green-600 */
+  color: #ffffff;
+}
+.page-404__btn--primary:hover {
+  background-color: #15803d; /* green-700 */
+}
+.page-404__btn--secondary {
+  background-color: transparent;
+  color: inherit;
+  border-color: rgba(0,0,0,.1);
+}
+.page-404__btn--secondary:hover {
+  border-color: rgba(0,0,0,.25);
+}
+.page-404__search {
+  margin-top: 32px;
+}
+.page-404__hint {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #9ca3af; /* gray-400 */
+}
+

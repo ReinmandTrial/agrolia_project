@@ -1,0 +1,3 @@
+<?php
+return ['project-id-version'=>'_s 1.0.0','report-msgid-bugs-to'=>'https://wordpress.org/support/theme/_s','last-translator'=>'','language-team'=>'Ukrainian','mime-version'=>'1.0','content-type'=>'text/plain; charset=UTF-8','content-transfer-encoding'=>'8bit','pot-creation-date'=>'2020-04-17T21:03:15+00:00','po-revision-date'=>'2025-08-06 20:59+0000','x-generator'=>'Loco https://localise.biz/','x-domain'=>'_s
+','language'=>'uk','plural-forms'=>'nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);','x-loco-version'=>'2.8.0; wp-6.8.2; php-7.4.33','messages'=>[]];

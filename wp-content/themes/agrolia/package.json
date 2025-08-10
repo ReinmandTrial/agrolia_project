@@ -1,0 +1,60 @@
+{
+  "name": "agrolia",
+  "version": "1.0.0",
+  "description": "Современная WordPress тема для агрономической компании",
+  "author": "Agrolia Team",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "Agriculture",
+    "Logistics"
+  ],
+  "homepage": "https://agrolia.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agrolia/theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agrolia/theme/issues"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "dir-archiver": "^1.1.1",
+    "node-sass": "^7.0.1",
+    "rtlcss": "^3.5.0",
+    "stylelint": "^15.10.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "scripts": {
+    "dev": "npm run watch",
+    "watch": "node-sass css/style.css -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "build": "npm run compile:css && npm run compile:rtl && npm run minify",
+    "compile:css": "node-sass css/style.css -o css/ && stylelint 'css/*.css' --fix || true",
+    "compile:rtl": "rtlcss css/style.css css/style-rtl.css",
+    "minify": "postcss css/style.css -o css/style.min.css",
+    "lint:scss": "wp-scripts lint-style 'css/*.css'",
+    "lint:js": "wp-scripts lint-js 'js/*.js'",
+    "bundle": "dir-archiver --src . --dest ../agrolia.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist css/style.css.map yarn.lock"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 
